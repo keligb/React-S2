@@ -1,39 +1,41 @@
 // import logo from './logo.svg';
 import './App.css';
-import React, { useState } from "react"
-import Accordion from "./components/Accordion.js"
-import Accordion2 from "./components/Accordion2.js"
+// import React, { useState } from "react"
 import Navigation from "./components/Navigation"
+import Route from "./components/Route.js"
+import "./styles/Navigation.css"
+import "./styles/Pays.css"
+import "./styles/Accueil.css";
+import "./styles/Card.css";
+import Accueil from "./pages/Accueil"
+import Animals from "./pages/Pays"
+import AnimalCrossing from "./pages/Films"
+import Pays from './pages/Pays';
 
-const showAccordion = () => {
-  if (window.location.pathname === "/accordion"){
-    return(
-      <div>
-        <Navigation />
-        <Accordion />
-      </div>
-    ) 
-  }
-}
 
-const showtest = () => {
-  if (window.location.pathname === "/accordion2"){
-    return <Accordion2 />
-  }
-}
-
-const showNavigation = () => {
-  if (window.location.pathname === "/"){
-    return <Navigation />
-  }
-}
-
-export default() => {
+export default () => {
   return (
-    <div className="ui container">
-      {showAccordion()}
-      {showtest()}
-      {showNavigation()}
+    <div className = "">
+      <Route path="/">
+        <Navigation />
+        <Accueil />
+      </Route>
+
+      <Route path="/pays">
+        <Navigation />
+        <Pays />
+      </Route>
+
+      <Route path="/films">
+        <Navigation />
+        <AnimalCrossing />
+      </Route>
+
+      <Route path="/all">
+        <Navigation />
+        <Animals />
+        <AnimalCrossing />
+      </Route>
     </div>
   )
 }
