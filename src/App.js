@@ -6,11 +6,11 @@ import Route from "./components/Route.js"
 import "./styles/Navigation.css"
 import "./styles/Pays.css"
 import "./styles/Accueil.css";
-import "./styles/Card.css";
+import "./styles/Country-Card.css";
 import Accueil from "./pages/Accueil"
-import Animals from "./pages/Pays"
-import AnimalCrossing from "./pages/Films"
+import Films from "./pages/Films"
 import Pays from './pages/Pays';
+import All from './pages/All';
 
 
 export default () => {
@@ -28,13 +28,14 @@ export default () => {
 
       <Route path="/films">
         <Navigation />
-        <AnimalCrossing />
+        <Films />
       </Route>
 
       <Route path="/all">
         <Navigation />
-        <Animals />
-        <AnimalCrossing />
+        {/* <Pays /> */}
+        {/* <Films /> */}
+        <All />
       </Route>
     </div>
   )
