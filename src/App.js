@@ -1,6 +1,4 @@
-// import logo from './logo.svg';
 import './App.css';
-// import React, { useState } from "react"
 import Navigation from "./components/Navigation"
 import Route from "./components/Route.js"
 import "./styles/Navigation.css"
@@ -33,8 +31,6 @@ export default () => {
 
       <Route path="/all">
         <Navigation />
-        {/* <Pays /> */}
-        {/* <Films /> */}
         <All />
       </Route>
     </div>
