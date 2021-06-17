@@ -1,4 +1,5 @@
 import React from 'react';
+import fleche from '../img/fleche.png';
 // import AllCard from "../components/AllCard";
 import axios from "axios";
 import { useEffect, useState } from 'react';
@@ -27,6 +28,7 @@ const All = () => {
                     setData(res.data);
                     setCountry(res.data.production_countries[0].name);
                     setPlayOnce(false);
+                    console.log(data);
                     
                 });
                 
@@ -51,14 +53,23 @@ const All = () => {
     return (
 
         <div>
-            <h1>API Films + API Drapeaux</h1>
-
-            <ul>
-                <li>Nom du film : {data.title}</li>
-                <img src={"https://image.tmdb.org/t/p/w500/" + data.poster_path}/>
-                <li>Résumé : {data.overview}</li>
-                <img src={dataCountryAPI.flag} />
-            </ul>
+            {/* <h1>Détail du film (API Films + API Drapeaux)</h1> */}
+            
+            <div className="container-all">
+                <h1 className="title-movie-all">{data.title}</h1>
+                <div className="img-flex-all">
+                    <img className="img-all-movie" src={"https://image.tmdb.org/t/p/w500/" + data.poster_path}/>
+                    <img className="imd-arrow-all" src={fleche} />
+                    <img className="img-all-country" src={dataCountryAPI.flag} />
+                </div>
+                <div className="details-all">
+                    <h2>Titre original : {data.original_title}</h2>
+                    <p>Date de sortie : {data.release_date}</p>
+                    <p>Durée : {data.runtime} mn</p>
+                    <p>Pays de production : {country}</p>
+                    <p className="resume-movie-all">Résumé : {data.overview}</p>
+                </div>
+            </div>
             
         </div>
     );

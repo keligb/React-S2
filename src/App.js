@@ -1,10 +1,13 @@
 import './App.css';
+// import './fleche.jpeg';
 import Navigation from "./components/Navigation"
 import Route from "./components/Route.js"
 import "./styles/Navigation.css"
 import "./styles/Pays.css"
 import "./styles/Accueil.css";
 import "./styles/Country-Card.css";
+import "./styles/MovieCard.css";
+import "./styles/All.css";
 import Accueil from "./pages/Accueil"
 import Films from "./pages/Films"
 import Pays from './pages/Pays';

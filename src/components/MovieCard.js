@@ -6,11 +6,13 @@ const MovieCard = (props) => {
     console.log(movie);
 
     return (
-        <div>
-            <h1>{movie.title}</h1>
-            <img src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}/>
-            <p>{movie.overview}</p>
-        </div>
+        // <div className="container">
+            <div className="MovieCard">
+                <h1 className="movie-title">{movie.title}</h1>
+                <img className="img-MovieCard" src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}/>
+                {/* <p>{movie.overview}</p> */}
+            </div>
+        // </div>
     );
 }
 

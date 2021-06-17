@@ -1,0 +1,30 @@
+.MovieCard{
+    width: 20vw;
+}
+
+.img-MovieCard{
+    border-radius: 20px;
+    width: 15vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    justify-content: space-around;
+}
+
+.movie-title{
+    font-size: 16px;
+}
+
+/* .imgMovie{
+    width: 15vw;
+} */
+
+/* .imgMovie:hover{
+    background: rgba(0, 0, 0, 0.65);
+} */

@@ -1,0 +1,37 @@
+.img-all-movie{
+    border-radius: 20px;
+    width: 15vw;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.title-movie-all{
+    text-align: center;
+}
+
+.container-all{
+    /* margin-top: 8vh; */
+    /* display: flex; */
+}
+
+.img-flex-all{
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+}
+
+.details-all{
+    margin-top: 7vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 50vw;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.resume-movie-all{
+    padding: 20px;
+}

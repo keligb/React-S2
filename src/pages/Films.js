@@ -28,14 +28,13 @@ const Films = () => {
 
 
         <div>
-            <h1>API Films</h1> 
-            <ul>
-                {data.map((movie) => (
+            <h1>Les plus populaires :</h1> 
+            <div className="container">
+                    {data.map((movie) => (
+                            <MovieCard movie={movie} key={movie.title} />
 
-                    <MovieCard movie={movie} key={movie.title} />
-
-                ))}
-            </ul>
+                    ))}
+            </div>
         </div>
 
     );
