@@ -28,7 +28,7 @@ const Films = () => {
 
 
         <div>
-            <h1>Les plus populaires :</h1> 
+            <h1 className="titre-page">Les plus populaires :</h1> 
             <div className="container">
                     {data.map((movie) => (
                             <MovieCard movie={movie} key={movie.title} />

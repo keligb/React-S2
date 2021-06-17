@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body{
     font-family: "Roboto", sans-serif;
@@ -10,33 +11,30 @@ h1{
 }
 
 .apis{
-    /* display: flex; */
-    /* justify-content: space-around; */
     margin-top: 100px;
 }
 
-/* .api-pays{
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: white;
-    height: 80vh;
-    width: 60vh;
-} */
-
-/* .api-pays h2{
-    text-align: center;
-} */
-
-/* .api-films{
-    text-align: center;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: white;
-    height: 80vh;
-    width: 60vh;
-}  */
-
 .api-films{
     margin-top: 80px;
+}
+
+.header-accueil{
+    display: flex;
+    justify-content: center;
+}
+
+.img-clap{
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+}
+
+.img-earth{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+}
+
+.titre-page{
+    font-family: 'Lobster', cursive;
 }

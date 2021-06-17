@@ -26,7 +26,7 @@ const Pays = () => {
 
     return (
         <div>
-            <h1>API Drapeaux</h1>
+            <h1 className="titre-page">API Drapeaux</h1>
 
             <ul>
                 {data.map((country) => (
