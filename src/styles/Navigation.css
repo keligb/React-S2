@@ -23,7 +23,55 @@
     text-decoration: none;
 }
 
+/* .a-menu:hover{
+    border-bottom: 2px solid gold;
+} */
+
 .li-menu:hover{
     background-color: #111;
 }
 
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 10vw;
+    z-index: 1000;
+}
+
+.sous::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    /* width: 100%; */
+    text-align: left;
+    /* padding-top: 50px; */
+}
+
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+    text-decoration: none;
+    color: black;
+}
+
+.sous a:hover{
+    border-bottom: none;
+    color: salmon;
+    /* border-bottom: 2px solid gold; */
+    /* background-color: rgba(200, 200, 200, 0.1); */
+}
+
+.deroulant > a a::after{
+    content: " >";
+    font-size: 12px;
+}
