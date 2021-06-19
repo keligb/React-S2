@@ -13,6 +13,7 @@
 .li-menu{
     display: inline;
     float: left;
+    width: 7vw;
 }
 
 .a-menu{
@@ -51,10 +52,12 @@ nav > ul li:hover .sous{
 }
 
 .sous li{
-    float: none;
+    /* float: none; */
     /* width: 100%; */
+    /* text-align: left; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: left;
-    /* padding-top: 50px; */
 }
 
 .sous a{
@@ -62,6 +65,8 @@ nav > ul li:hover .sous{
     border-bottom: none;
     text-decoration: none;
     color: black;
+    /* text-align: left; */
+    /* padding-top: 50px; */
 }
 
 .sous a:hover{
@@ -71,7 +76,20 @@ nav > ul li:hover .sous{
     /* background-color: rgba(200, 200, 200, 0.1); */
 }
 
-.deroulant > a a::after{
+ul .sous{
+    padding: 0;
+    /* text-align: left; */
+}
+
+/* .li-menu-sous{
+    text-align: left;
+} */
+
+/* .sous .li-menu-sous a{
+    text-align: left;
+} */
+
+/* .deroulant > a a::after{
     content: " >";
     font-size: 12px;
-}
+} */

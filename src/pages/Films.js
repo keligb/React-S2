@@ -17,7 +17,7 @@ const Films = () => {
                 .then((res) => {
                     setData(res.data.results);
                     setPlayOnce(false);
-                    console.log(res.data);
+                    console.log(res.data.results);
                 });
                 
             }

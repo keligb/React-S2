@@ -3,7 +3,7 @@ import React from "react";
 const MovieCard = (props) => {
 
     const { movie } = props;
-    console.log(movie);
+    // console.log(movie);
 
     return (
         // <div className="container">
