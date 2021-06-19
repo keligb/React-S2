@@ -68,7 +68,11 @@
     width: 90px;
 }
 
-li{
+.card{
     display: inline;
     float: left;
+}
+
+li{
+    list-style: none;
 }

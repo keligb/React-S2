@@ -13,6 +13,9 @@ import Films from "./pages/Films"
 import Pays from './pages/Pays';
 import All from './pages/All';
 import FilmsNote from './pages/Films_note';
+import FilmsPlaying from './pages/Films_cinema';
+import PresAPIDrapeaux from './pages/pres_API_drapeaux';
+import PresAPIFilms from './pages/pres_API_films';
 
 
 export default () => {
@@ -42,6 +45,22 @@ export default () => {
         <Navigation />
         <FilmsNote />
       </Route>
+
+      <Route path="/movie-now-playing">
+        <Navigation />
+        <FilmsPlaying />
+      </Route>
+
+      <Route path="/pres-drapeaux-API">
+        <Navigation />
+        <PresAPIDrapeaux />
+      </Route>
+
+      <Route path="/pres-films-API">
+        <Navigation />
+        <PresAPIFilms />
+      </Route>
+
     </div>
   )
 }

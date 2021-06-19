@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 
 const Films = () => {
     const[data, setData] = useState([]);
-    const[country, setCountry] = useState([]);
+    // const[country, setCountry] = useState([]);
     const[playOnce, setPlayOnce] = useState(true);
 
 
@@ -30,10 +30,10 @@ const Films = () => {
         <div>
             <h1 className="titre-page">Les plus populaires :</h1> 
             <div className="container">
-                    {data.map((movie) => (
-                            <MovieCard movie={movie} key={movie.title} />
+                {data.map((movie) => (
+                    <MovieCard movie={movie} key={movie.title} />
 
-                    ))}
+                ))}
             </div>
         </div>
 
