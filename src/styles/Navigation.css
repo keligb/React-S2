@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: #333; */
     background-color: #22263C;
     font-family: "Roboto", sans-serif;
 }
@@ -23,10 +22,6 @@
     padding: 14px 16px;
     text-decoration: none;
 }
-
-/* .a-menu:hover{
-    border-bottom: 2px solid gold;
-} */
 
 .li-menu:hover{
     background-color: #111;
@@ -52,9 +47,6 @@ nav > ul li:hover .sous{
 }
 
 .sous li{
-    /* float: none; */
-    /* width: 100%; */
-    /* text-align: left; */
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
@@ -65,31 +57,13 @@ nav > ul li:hover .sous{
     border-bottom: none;
     text-decoration: none;
     color: black;
-    /* text-align: left; */
-    /* padding-top: 50px; */
 }
 
 .sous a:hover{
     border-bottom: none;
     color: salmon;
-    /* border-bottom: 2px solid gold; */
-    /* background-color: rgba(200, 200, 200, 0.1); */
 }
 
 ul .sous{
     padding: 0;
-    /* text-align: left; */
 }
-
-/* .li-menu-sous{
-    text-align: left;
-} */
-
-/* .sous .li-menu-sous a{
-    text-align: left;
-} */
-
-/* .deroulant > a a::after{
-    content: " >";
-    font-size: 12px;
-} */

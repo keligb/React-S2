@@ -1,6 +1,5 @@
 import React from 'react';
 import fleche from '../img/fleche.png';
-// import AllCard from "../components/AllCard";
 import axios from "axios";
 import { useEffect, useState } from 'react';
 
@@ -12,6 +11,7 @@ const All = () => {
     const[country, setCountry] = useState([]);
     const[playOnce, setPlayOnce] = useState(true);
     const countryString = country.toString();
+    
     let random_id = Math.floor(Math.random() * 900);
     let random_id_string = random_id.toString();
 
@@ -53,7 +53,6 @@ const All = () => {
     return (
 
         <div>
-            {/* <h1>Détail du film (API Films + API Drapeaux)</h1> */}
             
             <div className="container-all">
                 <h1 className="title-movie-all">{data.title}</h1>

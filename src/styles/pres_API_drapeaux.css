@@ -1,12 +1,22 @@
-.img-pres-drapeaux{
+.img-pres{
     width: 35vw;
     height: 20vh;
     border-radius: 6px;
 }
 
 .container-img-pres{
-    /* width: 20vw; */
-    margin-top: 90px;
+    margin-top: 50px;
     display: flex;
     justify-content: space-around;
+}
+
+.h2-pres{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.img-api-pres{
+    width: 55px;
+    height: 55px;
+    padding-top: 10px;
 }

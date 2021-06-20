@@ -1,21 +1,33 @@
 import React from 'react';
+import MovieDatabase_img from '../img/Moviedatabase.png';
+import popcorn from '../img/popcorn.png';
 
 const pres_API_films = () => {
     return (
         <div>
-            <h1 className="titre-page">Présentation API "MovieDatabase"</h1>
-            <div className="presentation">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae volutpat felis. 
-                    Suspendisse tortor libero, sodales sed augue nec, cursus ullamcorper ipsum. Suspendisse odio lectus, 
-                    porta ac mi vel, pharetra ullamcorper purus. Fusce non dapibus nisl. 
-                    Sed vel convallis erat. Mauris efficitur, ex sit amet congue mattis, mauris purus congue lacus, 
-                    vitae malesuada nibh mi nec ligula. Suspendisse ultrices, ante sed tempus interdum, odio augue eleifend sapien, 
-                    vitae ullamcorper diam quam eu est. Pellentesque a pulvinar ipsum, vel lobortis urna. 
-                    Pellentesque a hendrerit justo. Nullam euismod nisl vitae efficitur dictum. 
-                    Nullam non sapien ut orci commodo euismod. Pellentesque ultricies, risus vitae porta vulputate, 
-                    tellus erat condimentum massa, eget suscipit diam lorem id purus. Vestibulum a malesuada erat, in pellentesque nunc. 
-                    Donec cursus non tellus sed feugiat.</p>
-                <a href="https://www.themoviedb.org/?language=fr-FR">Liens vers l'API</a>
+
+            <div className="header">
+                <img className="img-api-pres-films-left" src={popcorn} />
+                <h1 className="titre-page">Présentation API "MovieDatabase"</h1>
+                <img className="img-api-pres-films-right" src={popcorn} />
+            </div>
+
+            <div className="presentation-films">
+                <p>L'API "MovieDatabase" retourne une liste de films et fournit des informations tels que le titre, le genre, le résumé, ou encore la date de sortie.<br/></p>
+                <p>Il est possible de trier les films que l'on souhaite récupérer, d'afficher les plus populaires ou les mieux notés par exemple.<br />
+                Pour pouvoir utiliser l'API, il faut générer au préalable une clé API via le site internet.<br />
+                La documentation recense les urls à utiliser en fonction de ce qu'on veut afficher.<br />
+                Elle est disponible à cette adresse : <a className="link-doc-api" href="https://developers.themoviedb.org/3/getting-started/introduction" target="blank">Voir la documentation</a></p>
+                
+                <div className="button-pres-api">
+                    <a className="link-pres-api" href="https://www.themoviedb.org/?language=fr-FR" target="blank">Lien vers l'API</a>
+                </div>
+            </div>
+
+            <h2 className="h2-pres">Exemple de ce que renvoie l'API :</h2>
+
+            <div className="container-img-pres-movie">
+                <img className="img-pres-movie" src={MovieDatabase_img} />
             </div>
         </div>
     );

@@ -6,7 +6,6 @@
     transition: 0.3s;
     overflow: hidden;
     border-radius: 4px;
-    /* width: 160px; */
 }
 .card:hover {
     transform: scale(1.25);

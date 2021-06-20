@@ -1,8 +1,6 @@
 import React from 'react';
 import axios from "axios";
 import Card from "../components/Country-Card";
-// import AllCard from "../components/AllCard";
-import All from "./All";
 import { useEffect, useState } from 'react';
 
 const Pays = () => {
@@ -15,7 +13,6 @@ const Pays = () => {
             .then((res) => {
                 setData(res.data);
                 setPlayOnce(false);
-                // console.log(res.data);
             });
         }
 
@@ -34,13 +31,6 @@ const Pays = () => {
                 ))}
             </ul>
 
-            {/* <ul>
-                {data.map((pays) => (
-                    <All donnees={pays} key={pays.name}/>
-                ))}
-            </ul> */}
-
-            
         </div>
     );
 };

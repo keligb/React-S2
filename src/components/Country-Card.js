@@ -4,7 +4,6 @@ const Card = (props) => {
 
     
     const { country } = props;
-     //console.log(country);
     
     return (
         <li className="card">

@@ -5,21 +5,22 @@ import earth from '../img/earth.png';
 const Accueil = () => {
     return (
         <div>
-            <div className="header-accueil">
+            <div className="header">
                 <img className="img-clap" src={clap} />
                 <h1 className="titre-page">Bienvenue sur mon app</h1>
                 <img className="img-earth" src={earth} />
             </div>
 
             <div className="presentation">
-                <h2>Présentation du sujet</h2>
-                <p>Pour cette soutenance, j'ai choisis d'utiliser une API qui renvoie des films et une autre qui renvoie des pays.< br/>
-                    Cette application se compose de 3 pages principales :   
+                <h2 className="h2-pres-sujet">Présentation du sujet</h2>
+                <p>Pour cette soutenance, j'ai choisi d'associer deux API, une qui renvoie des films, l'autre des pays.< br/>
+                    <br />
+                    L'application se compose de 3 pages principales :   
                 </p>
                 <ul>
-                    <li> - Pays : affiche les informations sur un Pays dont le drapeau</li>
-                    <li> - Films : présente des affiches de films avec leur titre</li>
-                    <li> - All : Affiche un film depuis l'API Movie et le drapeau qui correspond au pays de production du film depuis l'API drapeau</li>
+                    <li> - Pays : affiche tous les drapeaux que retourne l'API, plus 3 informations (nom du pays, capitale, population)</li>
+                    <li> - Films : reprend les affiches de films classés en trois catégories (les plus populaires, les mieux notés et les films à l'affiche)</li>
+                    <li> - All : associe un film au drapeau qui correspond au pays de production</li>
                 </ul>
 
             </div>

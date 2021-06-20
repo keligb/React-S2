@@ -24,6 +24,4 @@ const Navigation = () => {
     );
 };
 
-//Ajouter liste déroulante sur les onglets du menu
-
 export default Navigation;

@@ -1,5 +1,4 @@
 import './App.css';
-// import './fleche.jpeg';
 import Navigation from "./components/Navigation"
 import Route from "./components/Route.js"
 import "./styles/Navigation.css"
@@ -9,6 +8,7 @@ import "./styles/Country-Card.css";
 import "./styles/MovieCard.css";
 import "./styles/All.css";
 import "./styles/pres_API_drapeaux.css";
+import "./styles/pres_API_films.css";
 import Accueil from "./pages/Accueil"
 import Films from "./pages/Films"
 import Pays from './pages/Pays';
