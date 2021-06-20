@@ -1,0 +1,12 @@
+.img-pres-drapeaux{
+    width: 35vw;
+    height: 20vh;
+    border-radius: 6px;
+}
+
+.container-img-pres{
+    /* width: 20vw; */
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+}

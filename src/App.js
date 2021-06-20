@@ -8,6 +8,7 @@ import "./styles/Accueil.css";
 import "./styles/Country-Card.css";
 import "./styles/MovieCard.css";
 import "./styles/All.css";
+import "./styles/pres_API_drapeaux.css";
 import Accueil from "./pages/Accueil"
 import Films from "./pages/Films"
 import Pays from './pages/Pays';

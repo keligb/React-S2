@@ -1,4 +1,7 @@
 import React from 'react';
+import test from '../img/test.png';
+import RestCountries1 from '../img/RestCountries_1.png';
+import RestCountries2 from '../img/RestCountries_2.png';
 
 const pres_API_drapeaux = () => {
     return (
@@ -15,6 +18,11 @@ const pres_API_drapeaux = () => {
                     tellus erat condimentum massa, eget suscipit diam lorem id purus. Vestibulum a malesuada erat, in pellentesque nunc. 
                     Donec cursus non tellus sed feugiat.</p>
                 <a href="https://restcountries.eu">Lien vers l'API</a>
+            </div>
+
+            <div className="container-img-pres">
+                <img className="img-pres-drapeaux" src={RestCountries1} />
+                <img className="img-pres-drapeaux" src={RestCountries2} />
             </div>
         </div>
     );

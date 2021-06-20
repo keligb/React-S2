@@ -42,11 +42,12 @@ h1{
 .presentation{
     width: 50vw;
     text-align: center;
-    border: 1px solid black;
+    border: 2px dotted black;
     border-radius: 6px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 15vh;
+    padding: 15px;
 }
 
 .link-pres{

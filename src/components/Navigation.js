@@ -6,8 +6,8 @@ const Navigation = () => {
             <ul className="ul-menu">
                 <li className="li-menu deroulant"><a className="a-menu" href="/">Accueil</a>
                     <ul className="sous">
-                        <li><a href="/pres-drapeaux-API">API Drapeaux</a></li>
-                        <li><a href="/pres-films-API">API Films</a></li>
+                        <li><a href="/pres-drapeaux-API">RestCountries</a></li>
+                        <li><a href="/pres-films-API">MovieDatabase</a></li>
                     </ul>
                 </li>
                 <li className="li-menu"><a className="a-menu" href="/pays">Pays</a></li>
