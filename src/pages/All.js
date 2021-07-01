@@ -17,7 +17,7 @@ const All = () => {
 
 
 
-    useEffect(function test() { 
+    useEffect(() => { 
 
 
             if (playOnce) {
